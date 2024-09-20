@@ -24,6 +24,8 @@ word2:    p   q   r   s
 merged: a p b q   r   s
 """
 
+# My Approach
+
 class Solution:
     def mergeAlternately(self, word1: str, word2: str) -> str:
         word = ""
@@ -45,4 +47,21 @@ word1 = "abcd"
 word2 = "pqrs"
 sol = Solution()
 print(sol.mergeAlternately(word1, word2))
+
+
+# Best Approach:
+"""
+class Solution:
+    def mergeAlternately(self, word1: str, word2: str) -> str:
+        i,j = 0,0
+        res = []
+        while ( i < len(word1) or j < len(word2)):
+            if i < len(word1):
+                res.append(word1[i])
+                i += 1
+            if j < len(word2):
+                res.append(word2[j])
+                j += 1
+        return "".join(res)
     
+"""
