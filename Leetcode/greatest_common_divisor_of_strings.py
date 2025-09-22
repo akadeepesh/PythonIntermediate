@@ -14,3 +14,8 @@ Example 2:
 Input: str1 = "ABABAB", str2 = "ABAB"
 Output: "AB"
 """
+
+from math import gcd
+
+str1 = "ABABAB"
+str2 = "ABAB"

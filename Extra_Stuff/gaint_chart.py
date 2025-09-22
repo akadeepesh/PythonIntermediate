@@ -4,7 +4,7 @@ from matplotlib.patches import Patch
 import numpy as np
 from io import StringIO
 
-# Read the data
+# Read the csv data
 data = """Task,Assignee,Start,Duration (weeks)
 Literature Review,All,Week 1,2
 System Architecture Design,Deepesh/Harsh,Week 2,2
